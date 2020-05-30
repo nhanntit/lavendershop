@@ -7,14 +7,5 @@
 #       Just removing an entry from this initializer will not make the preference value go away.
 #       Instead you must either set a new value or remove entry, clear cache, and remove database entry.
 #
-# In order to initialize a setting do:
-# config.setting_name = 'new value'
-Spree.config do |config|
-  # Example:
-  # Uncomment to stop tracking inventory levels in the application
-  # config.track_inventory_levels = false
-  config.logo = 'lavender-logo.png'
-  config.admin_interface_logo = 'admin-logo.png'
-end
-
-Spree.user_class = "Spree::LegacyUser"
+# Set default locale to something other than :en
+I18n.default_locale = :vi
